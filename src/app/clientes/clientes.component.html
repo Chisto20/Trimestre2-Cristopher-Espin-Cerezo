@@ -1,0 +1,11 @@
+
+<h1>Aqui tienes un poco de información sobre algunos clientes</h1>
+<div *ngFor='let user of users' class="card" style="width: 18rem; margin-top: 2%; margin-right: 1%; float: left;">
+    <img class="card-img-top" src="{{user.picture.large}}" style="width: 60%; height: 60%; margin-left: 18%;">
+    <div class="card-body">
+        <h5 class="card-title">{{ user.name.first | uppercase }} {{ user.name.last | uppercase }}</h5>
+        <p class="card-text">Email: {{ user.email }}</p>
+        <p class="card-text">Age: {{ user.registered.age }}</p>
+        <a href="#" class="btn btn-primary">More Informartion</a>
+    </div>
+</div>
